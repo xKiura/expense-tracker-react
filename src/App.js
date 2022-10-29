@@ -1,3 +1,4 @@
+import React from 'react';
 import { Header } from './componenets/Header';
 import { Balance } from './componenets/Balance';
 import { IncomeExpenses } from './componenets/IncomeExpenses';

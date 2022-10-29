@@ -14,19 +14,19 @@ export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   // Actions
-  deleteTransaction((id) => {
+  function deleteTransaction(id) {
     dispatch({
       type: 'DELETE_TRANSACTION',
       payload: id,
     });
-  });
+  }
 
-  addTransaction((transaction) => {
+  function addTransaction(transaction) {
     dispatch({
       type: 'ADD_TRANSACTION',
-      payload: id,
+      payload: transaction,
     });
-  });
+  }
 
   return (
     <GlobalContext.Provider
